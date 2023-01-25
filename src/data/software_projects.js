@@ -12,9 +12,9 @@ export default [
         link: 'https://github.umn.edu/doebl028/Problem-Solver',
     },
     {
-        title: 'Chess with AI',
-        imgURL: 'assets/coming-soon.jpg',
-        stack: ['Python', 'Kivy', 'SQL'],
+        title: 'Website Portfolio',
+        imgURL: 'assets/',
+        stack: ['React', 'Tailwind', 'Vite'],
         link: '',
     }
 ]

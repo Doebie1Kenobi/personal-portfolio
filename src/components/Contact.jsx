@@ -3,13 +3,13 @@ import Title from './Title';
 
 function Contact() {
     return (
-        <div className='flex justify-center h-2/3 bg-black'>
+        <div className='flex justify-center max-w-md mx-auto md:max-w-7xl pt-5'>
             <div className='flex flex-row w-2/3'>
                 <div className='flex flex-col w-auto bg-orange-500'>
                     
                 </div>
                 <div className='flex flex-col justify-center'>
-                    <h1 className='text-7xl font-mona font-medium text-slate-50'>Contact Me</h1>
+                    <h1 className='text-4xl sm:text-7xl font-mona font-medium text-slate-50'>Contact Me</h1>
                     <form 
                         action='https://getform.io/f/6eadcb82-495b-4f95-8336-54313cc2c894'
                         method='POST'

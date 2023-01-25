@@ -10,7 +10,7 @@ function Footer() {
                 <a href='https://www.linkedin.com/in/evan-doebler-680173234/' target='_blank' rel='noopener noreferrer'><Icon icon={<BsLinkedin size="28" />}/></a>
                 <a href='https://twitter.com/Doebie1Kenobi' target='_blank' rel='noopener noreferrer'><Icon icon={<BsTwitter size="28" />}/></a>
                 <a href='https://www.facebook.com/evan.doebler.5' target='_blank' rel='noopener noreferrer'><Icon icon={<BsFacebook size="28" />}/></a>
-                <a href='https://github.umn.edu/doebl028' target='_blank' rel='noopener noreferrer'><Icon icon={<BsGithub size="28" />}/></a>
+                <a href='https://github.com/Doebie1Kenobi' target='_blank' rel='noopener noreferrer'><Icon icon={<BsGithub size="28" />}/></a>
             </div>
             <p className='text-sm mt-2 opacity-50 text-slate-50 font-mona'>
                 &copy; {new Date().getFullYear()} Evan Doebler. All rights reserved. 
