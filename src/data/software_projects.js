@@ -2,7 +2,7 @@ export default [
     {
         title: 'Android Mobile App',
         imgURL: '/assets/android-app.jpg',
-        stack: ['Java', 'MongoDB', 'JavaScript'],
+        stack: ['Java', 'MongoDB', 'NodeJS'],
         link: '',
     },
     {

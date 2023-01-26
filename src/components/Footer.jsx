@@ -4,7 +4,7 @@ import { BsInstagram, BsLinkedin, BsTwitter, BsGithub, BsFacebook } from "react-
 
 function Footer() {
     return (
-        <div className='py-5 text-center bg-black'>
+        <div className='py-5 text-center'>
             <div className='flex flex-row items-center justify-center gap-5 pb-5'>
                 <a href='https://www.instagram.com/evandoebler/' target='_blank' rel='noopener noreferrer'><Icon icon={<BsInstagram size="28" />}/></a>
                 <a href='https://www.linkedin.com/in/evan-doebler-680173234/' target='_blank' rel='noopener noreferrer'><Icon icon={<BsLinkedin size="28" />}/></a>
