@@ -1,10 +1,27 @@
 import React from 'react';
+import { useRef, useState, useEffect } from 'react';
 import software_projects from '../data/software_projects';
 import PortfolioItem from './PortfolioItem';
 
 function Portfolio() {
+        const myRef = useRef();
+        const [myElementIsVisible, setMyElementIsVisible] = useState();
+        console.log(myElementIsVisible);
+        useEffect(() => {
+            const observer = new IntersectionObserver((entries) => {
+                const entry = entries[0];
+                setMyElementIsVisible(entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            })
+            observer.observe(myRef.current);
+        }, [])
+
     return (
-        <div className='flex justify-center max-w-md md:max-w-7xl pt-24'>
+        <div ref={myRef} className='flex justify-center hidden-text pt-24'>
             <div className='flex flex-row w-2/3'>
                 <div className='flex flex-col w-auto'>
                     <div className='flex flex-col h-full justify-center pr-10'>

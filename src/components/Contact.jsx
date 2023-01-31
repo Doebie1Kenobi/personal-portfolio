@@ -1,14 +1,31 @@
 import React from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Icon from './Icon';
 import Title from './Title';
 import { MdOutlineContactMail } from "react-icons/md";
 
 function Contact() {
+    const myRef = useRef();
+        const [myElementIsVisible, setMyElementIsVisible] = useState();
+        console.log(myElementIsVisible);
+        useEffect(() => {
+            const observer = new IntersectionObserver((entries) => {
+                const entry = entries[0];
+                setMyElementIsVisible(entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            })
+            observer.observe(myRef.current);
+        }, [])
+
     return (
-        <div className='flex justify-center max-w-md md:max-w-7xl pt-24'>
+        <div ref={myRef} className='flex hidden-text justify-center pt-24'>
             <div className='flex flex-row w-2/3'>
                 <div className='flex flex-col w-auto'>
-                    <div className='hidden-graphic flex flex-col h-full justify-center items-center pr-10'>
+                    <div className='flex flex-col h-full justify-center items-center pr-10'>
                         <div className='w-1 h-half bg-gradient-to-b from-black to-blue-400'></div>
                         <div className='w-1 h-half bg-gradient-to-t from-black to-blue-400'></div>
                     </div>
@@ -40,7 +57,7 @@ function Contact() {
                         />
                         <button
                             name='button'
-                            className='text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md bg-blue-400 text-slate-50'>Contact Me</button>
+                            className='text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md bg-blue-500 hover:bg-blue-400 text-slate-50'>Contact Me</button>
                     </form>
                 </div>
             </div>
