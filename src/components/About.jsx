@@ -20,7 +20,7 @@ function About() {
 
     return (
         <div ref={myRef} className='flex justify-center hidden-text'>
-            <div className='flex flex-row w-2/3'>
+            <div className='flex flex-row w-4/5 sm:w-2/3'>
                 <div className='flex flex-col pr-10'>
                     <div className='flex flex-col h-full justify-center'>
                         <div className='w-1 h-half bg-gradient-to-b from-black to-purple-400'></div>

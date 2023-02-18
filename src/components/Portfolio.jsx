@@ -22,7 +22,7 @@ function Portfolio() {
 
     return (
         <div ref={myRef} className='flex justify-center hidden-text pt-24'>
-            <div className='flex flex-row w-2/3'>
+            <div className='flex flex-row w-4/5 sm:w-2/3'>
                 <div className='flex flex-col w-auto'>
                     <div className='flex flex-col h-full justify-center pr-10'>
                         <div className='w-1 h-half bg-gradient-to-b from-black to-orange-500'></div>
